@@ -2,7 +2,11 @@
         function init() {
             if (localStorage.getItem("pdg_theme") === null) {
                 localStorage.setItem('pdg_theme', 'light');
+                
             }
+
+            
+
             setTheme();
         }
         function setTheme(){
@@ -27,3 +31,17 @@
             setTheme();
 
         }
+        /* Set the width of the side navigation to 250px and the left margin of the page content to 250px and add a black background color to body */
+function openNav() {
+    $('#mySidenav').css('width','250px');
+    $('body').css('marginLeft','250px');
+    $('.overlay').css('display','block');
+}
+
+/* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
+function closeNav() {
+  $('#mySidenav').css('width','0');
+  $('body').css('marginLeft','0');
+  $('.overlay').css('display','none');
+
+}

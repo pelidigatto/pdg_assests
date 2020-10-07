@@ -7,4 +7,5 @@
       --shadow: 0 5px 7px rgba(0, 0, 0, 0.35);
       --shadow_hover: 0 10px 10px rgba(0, 0, 0, 0.35);
       --padding: 15px;
+      --margin: 10px;
 }
