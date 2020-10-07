@@ -2,6 +2,7 @@
 html {
 	font-size: 100%;
 }
+
 body {
 	background-color: var(--bg);
 }
@@ -14,6 +15,7 @@ body {
 	color: var(--fg);
 	transition: 0.2s ease-in-out;
 }
+
 .item {
 	background-color: var(--sbg);
 	width: 100%;
@@ -21,13 +23,16 @@ body {
 	padding: var(--padding);
 	margin-bottom: 15px;
 }
+
 .hover:hover {
 	transform: translateY(-0.2rem);
 	box-shadow: var(--shadow_hover);
 }
+
 .deubug {
 	border: 1px solid red;
 }
+
 .sidenav {
 	height: 100%;
 	width: 0;
@@ -35,156 +40,178 @@ body {
 	z-index: 3;
 	top: 0;
 	left: 0;
-	
 	background-color: var(--sbg);
 	overflow-x: hidden;
 	transform: translateY(-0.2rem);
 	transition: 0.3s ease-in-out;
 	padding-top: 60px;
 	box-shadow: var(--shadow_hover);
-  }
-  
-  .sidenav a {
+}
+
+.sidenav a {
 	padding: 8px 8px 8px 32px;
 	text-decoration: none;
 	font-size: 25px;
 	color: var(--fg);
 	display: block;
 	transition: 0.3s;
-  }
-  
-  .sidenav a:hover {
+}
+
+.sidenav a:hover {
 	color: var(--accent);
-  }
-  
-  .sidenav .closebtn {
+}
+
+.sidenav .closebtn {
 	position: absolute;
 	top: 0;
 	right: 25px;
 	font-size: 36px;
 	margin-left: 50px;
-  }
-  
-  #main {
+}
+
+#main {
 	transition: margin-left .5s;
 	padding: 16px;
-  }
-  .overlay {
-	position: fixed; /* Sit on top of the page content */
-	display: none; /* Hidden by default */
-	width: 100%; /* Full width (cover the whole page) */
-	height: 100%; /* Full height (cover the whole page) */
+}
+
+.overlay {
+	position: fixed;
+	/* Sit on top of the page content */
+	display: none;
+	/* Hidden by default */
+	width: 100%;
+	/* Full width (cover the whole page) */
+	height: 100%;
+	/* Full height (cover the whole page) */
 	top: 0;
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background-color: rgba(0,0,0,0.5); /* Black background with opacity */
-	z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
-	cursor: pointer; /* Add a pointer on hover */
-  }
-  @media screen and (max-height: 450px) {
-	.sidenav {padding-top: 15px;}
-	.sidenav a {font-size: 18px;}
-  }
+	background-color: rgba(0, 0, 0, 0.5);
+	/* Black background with opacity */
+	z-index: 2;
+	/* Specify a stack order in case you're using a different order for other elements */
+	cursor: pointer;
+	/* Add a pointer on hover */
+}
 
-  button {
+@media screen and (max-height: 450px) {
+	.sidenav {
+		padding-top: 15px;
+	}
+	.sidenav a {
+		font-size: 18px;
+	}
+}
+
+button {
 	margin: 10px;
-		padding: 0 20px;
-		height: 30px;
-		transition: 0.3s ease;
-		border:1px solid;
-		background-color: var(--bg);
-		-webkit-box-shadow: none;
+	padding: 0 20px;
+	height: 30px;
+	transition: 0.3s ease;
+	border: 1px solid;
+	background-color: var(--bg);
+	-webkit-box-shadow: none;
 	-moz-box-shadow: none;
 	box-shadow: none;
-	
-	}
-	button{outline: 0;}
-	button:hover {
-		background-color: var(--sbg);
-	}
-	
-	.round{
-		border-radius: 10px;
-	}
-	.small{
-		height: 20px;
-	}
-	.medium{
-		height: 40px;
-	}
-	.large{
-		height: 60px;
-	}
-	.success{
-		background-color: #83AF9B;
-	}
-	.danger{
-		background-color: #FE4365;
-	}
-	button.success:hover{
-		background-color: #517D69;
-	}
-	button.danger:hover{
-		background-color: #DC0129;
-	}
-	
-	form{
-		width: 100%;
-		background-color: var(--bg);
-		padding: var(--padding);
-		overflow: hidden;
-	
-	}
+}
 
-	select,textarea,input{
-		padding: 10px;
-		background-color: var(--sbg);
-		width: 100%;
-		border: 1px solid;
-		border-radius: 6px;
-	}
-	textarea,input:focus{outline: 0;}
-	input[type="checkbox"] {
-		-webkit-appearance: none;
-		-moz-appearance: none;
-		appearance: none;
-		width: 30px; 
-		height: 30px; 
-		background: silver; 
-	
-	 }
-	 
-	 input[type=checkbox]:checked {
-		background: gray;
-		background-image: url(https://assets.peli-di-gatto.de/img/haekchen.svg);
-	 }
-	 input[type="radio"] {
-		-webkit-appearance: none;
-		-moz-appearance: none;
-		width: 32px;
-		height: 32px;
-		border: 4px solid silver;
-		background: silver;
-		border-radius: 50%;
-	}
-	input[type=radio]:checked {
-		background: gray;
-		border: 4px solid gray; 
-		background-image: url(https://www.mediaevent.de/css/img/punkt.svg);
-		background-size: 100%;
-	}
+button {
+	outline: 0;
+}
 
+button:hover {
+	background-color: var(--sbg);
+}
 
+.round {
+	border-radius: 10px;
+}
 
-	
- 
+.small {
+	height: 20px;
+}
 
+.medium {
+	height: 40px;
+}
 
+.large {
+	height: 60px;
+}
 
+.success {
+	background-color: #83AF9B;
+}
+
+.danger {
+	background-color: #FE4365;
+}
+
+button.success:hover {
+	background-color: #517D69;
+}
+
+button.danger:hover {
+	background-color: #DC0129;
+}
+
+form {
+	width: 100%;
+	background-color: var(--bg);
+	padding: var(--padding);
+	overflow: hidden;
+}
+
+select,
+textarea,
+input {
+	padding: 10px;
+	background-color: var(--sbg);
+	width: 100%;
+	border: 1px solid;
+	border-radius: 6px;
+}
+
+textarea,
+input:focus {
+	outline: 0;
+}
+
+input[type="checkbox"] {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	width: 30px;
+	height: 30px;
+	background: silver;
+}
+
+input[type=checkbox]:checked {
+	background: gray;
+	background-image: url(https://assets.peli-di-gatto.de/img/haekchen.svg);
+}
+
+input[type="radio"] {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	width: 32px;
+	height: 32px;
+	border: 4px solid silver;
+	background: silver;
+	border-radius: 50%;
+}
+
+input[type=radio]:checked {
+	background: gray;
+	border: 4px solid gray;
+	background-image: url(https://assets.peli-di-gatto.de/img/punkt.svg);
+	background-size: 100%;
+}
 
 
 /* Bootstrap Gird */
+
 .container-fluid {
 	margin-right: auto;
 	margin-left: auto;
