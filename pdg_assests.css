@@ -137,14 +137,14 @@ body {
 	
 	}
 
-	input{
+	select,textarea,input{
 		padding: 10px;
 		background-color: var(--sbg);
 		width: 100%;
 		border: 1px solid;
 		border-radius: 6px;
 	}
-	input:focus{outline: 0;}
+	textarea,input:focus{outline: 0;}
 	input[type="checkbox"] {
 		-webkit-appearance: none;
 		-moz-appearance: none;
@@ -157,9 +157,23 @@ body {
 	 
 	 input[type=checkbox]:checked {
 		background: gray;
-		background-image: url(img/haekchen.svg);
+		background-image: url(https://assets.peli-di-gatto.de/img/haekchen.svg);
 	 }
-
+	 input[type="radio"] {
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		width: 32px;
+		height: 32px;
+		border: 4px solid silver;
+		background: silver;
+		border-radius: 50%;
+	}
+	input[type=radio]:checked {
+		background: gray;
+		border: 4px solid gray; 
+		background-image: url(https://www.mediaevent.de/css/img/punkt.svg);
+		background-size: 100%;
+	}
 
 
 
