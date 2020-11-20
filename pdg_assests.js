@@ -1,4 +1,4 @@
-/* window.onload = init; */
+window.onload = init;
 
 function init() {
     if (localStorage.getItem("pdg_theme") === null) {
